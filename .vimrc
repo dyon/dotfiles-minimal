@@ -41,6 +41,18 @@ if exists("+undofile")
   set undofile
 endif
 
+filetype off
+
+" Have bundles on a separate file
+if filereadable(expand("~/.vimrc.bundles"))
+    source ~/.vimrc.bundles
+endif
+
+" Have bundles specific configuration on a separate file
+if filereadable(expand("~/.vimrc.bundles.config"))
+    source ~/.vimrc.bundles.config
+endif
+
 filetype plugin indent on
 
 syntax enable
