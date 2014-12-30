@@ -1,5 +1,5 @@
 set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -16,3 +16,5 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'rking/ag.vim'
+
+call neobundle#end()
