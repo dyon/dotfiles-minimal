@@ -12,6 +12,10 @@ echo -e "${red}Symlinking files...${nocolor}"
 ln -sf "`pwd`/.vimrc" ~/
 ln -sf "`pwd`/.vimrc.bundles" ~/
 ln -sf "`pwd`/.vimrc.bundles.config" ~/
+ln -sf "`pwd`/.tmux.conf" ~/
+ln -sf "`pwd`/.bash_aliases" ~/
+
+source ~/.bash_aliases
 
 echo -e "${red}Installing bundles...${nocolor}"
 
